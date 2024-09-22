@@ -13,6 +13,17 @@ package MultidimensionalArray;
 public class MultidimensionalArray {
      public static void main(String[] args) {
          
-         
+         //
+         String[][] programAndyear ={
+             {"BSIT", "First year"},
+             {"BSBA", "Second year"},   
+             {"BSED", "Third year"}
+         };
+         for(int i = 0; i < programAndyear.length; i++) {
+             for(int j = 0; j < programAndyear[i].length; j++ ) {
+                 System.out.print(programAndyear[i][j] + " ");
+             }
+             System.out.println();
+         }
      }
 }
