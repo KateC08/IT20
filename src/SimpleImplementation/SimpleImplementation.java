@@ -15,7 +15,7 @@ public class SimpleImplementation {
     
     //Array 
     int[] num = {1, 2, 3, 4, 5};    
-    //Output
+    //Output and Process by calling its index to print values
     System.out.println(num[0]);
     System.out.println(num[1]);
     System.out.println(num[2]);
