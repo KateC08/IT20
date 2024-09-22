@@ -12,6 +12,16 @@ package DisplayViaforLoop;
  */
 public class DisplayViaforLoop {
      public static void main(String[] args) {
+        
+        //Arrays 
+        String[] names = {"Katelyn", "Katya", "Katel", "Keyt"};
+        String[] year = {"First year", "Second Year", "Third year", "Fourth year"};
+        
+        //Foor Loops to Print All the values of the variable year and names
+        for(int i = 0; i < year.length; i++) {
+             //Output
+             System.out.println(names[i] + " " + year[i]);
+         }
          
      }
 }
