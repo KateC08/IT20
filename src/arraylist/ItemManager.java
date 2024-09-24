@@ -22,10 +22,19 @@ public class ItemManager {
     public void displayItems() {
         System.out.println("Items in the list: " + items);
     }
-    //To add new items
+    //To add new item
     public void addItems(String item) {
         items.add(item);
         System.out.println("You Inserted: " + items);
+    }
+    //To update an item
+    public void updateItem(int index, String newItem) {
+        if(index >= 0 && index < items.size()) {
+            String oldItem = items.set(index, newItem);
+            System.out.println("You updated: " + oldItem + " to " + newItem);
+        } else {
+            System.out.println("Index out of bounds");
+        }
     }
     
    

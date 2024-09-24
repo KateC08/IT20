@@ -34,6 +34,18 @@ public class Main {
         list.addItems(item);
         System.out.println("~~~~~~~~");
         
+        //To read and store the input in the variable named index
+        System.out.println("Enter an index number that you want to change: ");
+        index = sc.nextInt(); 
+        //Calling so that it reads the input of the next (String) line
+        sc.nextLine();
+        //To read and store the input in the variable named newItem
+        System.out.println("Enter a new name that you want to change on that index number: ");
+        newItem = sc.nextLine();
+        //Displays the updated item
+        list.updateItem(index, newItem);
+        list.displayItems();
+        System.out.println("~~~~~~~~");
 
        
     }
