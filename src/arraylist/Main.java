@@ -24,6 +24,15 @@ public class Main {
         String item, newItem, finditem;
         int index;
         
+        //Displays the list
+        list.displayItems();
+    
+        //To read and store the input in the variable named item
+        System.out.println("Enter an item you want to add: ");
+        item = sc.nextLine();
+        //Displays the new Item
+        list.addItems(item);
+        System.out.println("~~~~~~~~");
         
 
        

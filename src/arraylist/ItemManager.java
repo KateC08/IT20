@@ -14,9 +14,18 @@ public class ItemManager {
     
     private ArrayList<String> items;
     
-    // Constructor to initialize the ArrayList
+    //Constructor to initialize the ArrayList
     public ItemManager() {
         items = new ArrayList<>();
+    }
+    //To display all the items in list
+    public void displayItems() {
+        System.out.println("Items in the list: " + items);
+    }
+    //To add new items
+    public void addItems(String item) {
+        items.add(item);
+        System.out.println("You Inserted: " + items);
     }
     
    
