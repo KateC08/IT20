@@ -54,5 +54,13 @@ public class Main {
         list.findItem(finditem);
         list.displayItems();
         System.out.println("~~~~~~~~");
+        
+        //To read and store the input in the variable named newIndex
+        System.out.println("Enter an index number to delete: ");
+        int newIndex = sc.nextInt();
+        //Displays the item you want to delete
+        list.deleteItem(newIndex);
+        list.displayItems();
+        sc.close();
     }
 }
