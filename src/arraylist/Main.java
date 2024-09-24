@@ -47,6 +47,12 @@ public class Main {
         list.displayItems();
         System.out.println("~~~~~~~~");
 
-       
+        //To read and store the input in the variable named findItem
+        System.out.println("Enter a name that you want to find: ");
+        finditem = sc.nextLine();
+        //Displays the item you want to find
+        list.findItem(finditem);
+        list.displayItems();
+        System.out.println("~~~~~~~~");
     }
 }
