@@ -11,4 +11,7 @@ package topic_2_linkedlist_int;
  */
 public class Node {
     
+     //Initalizing variable data and Node next
+     int data;  
+     Node next;  
 }

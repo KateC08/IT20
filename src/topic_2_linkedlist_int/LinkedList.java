@@ -4,11 +4,11 @@
  * and open the template in the editor.
  */
 package topic_2_linkedlist_int;
-
 /**
  *
  * @author ITLAB1-PC11-STUDENT
  */
 public class LinkedList {
     
+    private Node head; 
 }
