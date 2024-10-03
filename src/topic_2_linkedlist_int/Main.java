@@ -76,6 +76,11 @@ public class Main {
                         System.out.println("Swapping node from index " + item7 + " to " + item8);
                         list.swapNodes(item7, item8);
                         list.printList();
+                        break;
+                case 4:
+                        //Exit the program
+                        System.out.println("Thank you! Comeback and run it again.");
+                        System.exit(0);
                         break;    
                 }
         
