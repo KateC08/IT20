@@ -44,6 +44,8 @@ public class LinkedList {
             if (head.data == value) {
                 head = head.next;
                 return;
+            } else if(head.data != value) {      
+                
             }
 
             Node current = head;
@@ -55,4 +57,5 @@ public class LinkedList {
                 current = current.next;
             }
         }
+
 }
