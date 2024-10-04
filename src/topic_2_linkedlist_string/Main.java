@@ -36,7 +36,25 @@ public class Main {
             
            switch(choice) {
                 case 1:
-                    
+                    // Adding elements to the list
+                        System.out.println("Add 5 Elements: ");
+                        sc.nextLine();
+                        String item1 = sc.nextLine();
+                        String item2 = sc.nextLine();
+                        String item3 = sc.nextLine();
+                        String item4 = sc.nextLine();
+                        String item5 = sc.nextLine();
+
+                        list.add(item1);
+                        list.add(item2);
+                        list.add(item3);
+                        list.add(item4);
+                        list.add(item5);
+
+                        System.out.println("------------------------------");
+                        list.printList();
+                        System.out.println("------------------------------");
+                        break;
            }         
         }    
 	}
