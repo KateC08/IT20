@@ -84,7 +84,12 @@ public class Main {
                         System.out.println("Current Linked List:");
                         list.printList();
                         System.out.println("------------------------------");
-                        break;    
+                        break;
+                case 4:
+                        //Exit the program
+                        System.out.println("Thank you! Comeback and run it again.");
+                        System.exit(0);
+                        break;        
            }         
         }    
 	}
