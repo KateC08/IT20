@@ -33,6 +33,10 @@ public class Main {
                 + " 4. Exit");
         
             int choice = sc.nextInt();
+            
+           switch(choice) {
+                case 1:
+           }         
         }    
 	}
 }
