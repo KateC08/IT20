@@ -24,6 +24,15 @@ public class Main {
         System.out.println("Hello there! Welcome!!");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~");
             
+        while(true) {
+            
+             System.out.println("Kindly choose a number in the menu you want to do: "
+                + " 1. Add an Item"
+                + " 2. Delete an Item"
+                + " 3. Move/Swap an Item"
+                + " 4. Exit");
         
+            int choice = sc.nextInt();
+        }    
 	}
 }

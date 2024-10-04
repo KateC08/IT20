@@ -27,5 +27,6 @@ public class Linkedlist {
         }
         current.next = newNode;
     }
+    
 
 }
