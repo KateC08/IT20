@@ -11,5 +11,7 @@ package topic_3_stack;
  * @author HP
  */
 public class Stack {
-    
+    private int maxSize;
+    private int[] stackArray;
+    private int top;
 }
