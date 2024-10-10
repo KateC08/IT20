@@ -19,5 +19,9 @@ public class Main {
        Stack stack = new Stack(5);
 
        System.out.println("Hello there!");
+       
+       while(true) {
+           
+       }
    }       
 }
