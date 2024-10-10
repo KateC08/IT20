@@ -629,7 +629,24 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
        
+      double  answer = 0;
         
+        secondnum = Double.parseDouble(jTextField1.getText());
+        
+        if(operation == "+") {
+            answer = firstnum + secondnum;
+        }
+        if(operation == "-") {
+            answer = firstnum - secondnum;
+        }
+        if(operation == "*") {
+            answer = firstnum * secondnum;
+        }
+        if(operation == "/") {
+            answer = firstnum / secondnum;
+        }
+        jTextField1.setText("" + answer);
+        operation = null;  
        
     }//GEN-LAST:event_jButton16ActionPerformed
 
