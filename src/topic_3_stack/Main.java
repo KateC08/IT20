@@ -27,6 +27,9 @@ public class Main {
                     + " 3. Pop"
                    +  " 4. Exit");
             int choice = sc.nextInt();
+        switch(choice) {
+
+        }    
        }
    }       
 }
