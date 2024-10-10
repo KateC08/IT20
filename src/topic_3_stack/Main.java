@@ -39,7 +39,12 @@ public class Main {
                      stack.push(num);
                      stack.size();
                      System.out.println("~~~~~~~~~~~~~~~~~~");
-                     break;    
+                     break; 
+            case 3:                   
+                     stack.peek();
+                     System.out.println("Popped element: " + stack.pop());
+                     stack.size();
+                     break;       
 
         }    
        }
