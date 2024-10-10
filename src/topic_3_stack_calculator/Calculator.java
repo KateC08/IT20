@@ -651,23 +651,31 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-       
+       firstnum = Double.parseDouble(jTextField1.getText());
+        jTextField1.setText("");
+        operation = "+";
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        
+       firstnum = Double.parseDouble(jTextField1.getText());
+        jTextField1.setText("");
+        operation = "-"; 
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-       
+       firstnum = Double.parseDouble(jTextField1.getText());
+        jTextField1.setText("");
+        operation = "*";
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        
+       firstnum = Double.parseDouble(jTextField1.getText());
+        jTextField1.setText("");
+        operation = "/"; 
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-
+       jTextField1.setText(jTextField1.getText() + ".");
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
