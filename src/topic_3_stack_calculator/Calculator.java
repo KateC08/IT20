@@ -52,6 +52,36 @@ public class Calculator extends javax.swing.JFrame {
             jTextField1.setText("");
         }
     }
+     
+    private void calculateResult() {
+        if (!jTextField1.getText().isEmpty() && !stack.isEmpty()) {
+            double secondOperand = Double.parseDouble(jTextField1.getText());
+            double firstOperand = stack.pop();
+            double result = 0;
+
+            switch (operator) {
+                case "+":
+                    result = firstOperand + secondOperand;
+                    break;
+                case "-":
+                    result = firstOperand - secondOperand;
+                    break;
+                case "*":
+                    result = firstOperand * secondOperand;
+                    break;
+                case "/":
+                    if (secondOperand != 0) {
+                        result = firstOperand / secondOperand;
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Cannot divide by zero", "Error", JOptionPane.ERROR_MESSAGE);
+                        return;
+                    }
+                    break;
+            }
+            jTextField1.setText(String.valueOf(result));
+            stack = new Stack<>(10); // Clear stack after calculation
+        }
+    } 
     
     
     
