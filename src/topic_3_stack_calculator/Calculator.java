@@ -17,7 +17,32 @@ public class Calculator extends javax.swing.JFrame {
     
     public Calculator() {
         initComponents();
+        addListeners();
         
+    }   
+    private void addListeners() {
+        ActionListener numberListener = e -> {
+            JButton button = (JButton) e.getSource();
+            jTextField1.setText(jTextField1.getText() + button.getText());
+        };
+        
+        jButton0.addActionListener(numberListener);
+        jButton1.addActionListener(numberListener);
+        jButton2.addActionListener(numberListener);
+        jButton3.addActionListener(numberListener);
+        jButton4.addActionListener(numberListener);
+        jButton5.addActionListener(numberListener);
+        jButton6.addActionListener(numberListener);
+        jButton7.addActionListener(numberListener);
+        jButton8.addActionListener(numberListener);
+        jButton9.addActionListener(numberListener);
+        jButtonDOT.addActionListener(e -> jTextField1.setText(jTextField1.getText() + "."));
+        
+        jButtonPLUS.addActionListener(e -> setOperator("+"));
+        jButtonMINUS.addActionListener(e -> setOperator("-"));
+        jButtonMUL.addActionListener(e -> setOperator("*"));
+        jButtonDIV.addActionListener(e -> setOperator("/"));
+        jButtonEQUAL.addActionListener(e -> calculateResult());
     }
     
     
