@@ -11,7 +11,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Calculator extends javax.swing.JFrame {
-       
+    
+       private Stack<Double> stack = new Stack<>(10);
+       private String operator = "";
     
     public Calculator() {
         initComponents();
