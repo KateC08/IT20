@@ -45,6 +45,14 @@ public class Calculator extends javax.swing.JFrame {
         jButtonEQUAL.addActionListener(e -> calculateResult());
     }
     
+     private void setOperator(String op) {
+        if (!jTextField1.getText().isEmpty()) {
+            stack.push(Double.parseDouble(jTextField1.getText()));
+            operator = op;
+            jTextField1.setText("");
+        }
+    }
+    
     
     
     /**
