@@ -39,6 +39,7 @@ public class Main {
                            sc.nextLine();
                            System.out.println("Enter new customer: ");
                            String name = sc.nextLine();
+                           System.out.println();
                            customerQueue.enqueue(new Customer(name));
                            break;
                      case 3:
@@ -47,11 +48,13 @@ public class Main {
                            break;
                     case 4:
                            //Exit the program
+                           System.out.println();
                            System.out.println("Thank you! Comeback and run it again.");
                            System.exit(0);
                            break;   
                     default:
-                        System.out.println("Invalid choice. Please select a valid option.");       
+                           System.out.println();
+                           System.out.println("Invalid choice. Please select a valid option.");       
                  }
              }
 	}
