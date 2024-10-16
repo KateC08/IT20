@@ -30,6 +30,10 @@ public class Main {
                  int choices = sc.nextInt();
                  switch(choices) {
                      case 1:
+                           System.out.println();
+                           customerQueue.displayQueue();
+                           break;
+                     case 2:
                            //To accepts another string input
                            sc.nextLine();
                            System.out.println("Enter new customer: ");
