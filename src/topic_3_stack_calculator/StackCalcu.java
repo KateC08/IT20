@@ -428,6 +428,45 @@ public class StackCalcu extends javax.swing.JFrame {
         stack.push((double) number);
         jTextField4.setText(String.valueOf(stack.peek())); 
     }
+    
+    private void performOperation(String option) {
+        
+        if (stack.isEmpty()) {
+            return; 
+        }
+        double secondOperand = stack.pop(); 
+        
+        if (stack.isEmpty()) {
+            stack.push(secondOperand); 
+            return;
+        }
+        double firstOperand = stack.pop();
+        
+        double result = 0;
+
+        switch (option) {
+            case "+":
+                    result = firstOperand + secondOperand;
+                    break;
+            case "-":
+                    result = firstOperand - secondOperand;
+                    break;
+            case "*":
+                    result = firstOperand * secondOperand;
+                    break;
+            case "/":
+                    if (secondOperand == 0) {
+                        JOptionPane.showMessageDialog(this, "Cannot divide by zero!");
+                        stack.push(firstOperand); 
+                        stack.push(secondOperand);
+                        return;
+                    }
+                    result = firstOperand / secondOperand;
+                    break;
+        }
+        stack.push(result); 
+        jTextField4.setText(String.valueOf(result));   
+    }
     /**
      * @param args the command line arguments
      */
