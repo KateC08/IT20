@@ -20,7 +20,17 @@ public class Main {
              Queue customerQueue = new Queue();
 
              while(true) {
+                 System.out.println("Hello there, hehe!");
                  
+                 System.out.println("Choose what you want:"
+                         + " 1. Display Queue."
+                         + " 2. Add Customer. "
+                         + " 3. Serve Customer."
+                         + " 4. Exit");
+                 int choices = sc.nextInt();
+                 switch(choices) {
+                     
+                 }
              }
 	}
 
