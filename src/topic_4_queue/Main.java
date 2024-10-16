@@ -19,9 +19,10 @@ public class Main {
              Scanner sc = new Scanner(System.in);
              Queue customerQueue = new Queue();
 
+             System.out.println("Hello there, hehe!");
+             
              while(true) {
-                 System.out.println("Hello there, hehe!");
-                 
+                               
                  System.out.println("Choose what you want:"
                          + " 1. Display Queue."
                          + " 2. Add Customer. "
@@ -40,6 +41,10 @@ public class Main {
                            String name = sc.nextLine();
                            customerQueue.enqueue(new Customer(name));
                            break;
+                     case 3:
+                           System.out.println();
+                           customerQueue.dequeue();
+                           break;                       
                  }
              }
 	}
