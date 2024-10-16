@@ -5,11 +5,18 @@
  */
 
 package topic_4_queue;
-
+import java.util.Scanner;
 /**
  *
  * @author HP
  */
 public class Main {
-    
+   
+
+	public static void main(String[] args) {
+		
+            
+             
+	}
+
 }
