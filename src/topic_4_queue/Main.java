@@ -29,7 +29,13 @@ public class Main {
                          + " 4. Exit");
                  int choices = sc.nextInt();
                  switch(choices) {
-                     
+                     case 1:
+                           //To accepts another string input
+                           sc.nextLine();
+                           System.out.println("Enter new customer: ");
+                           String name = sc.nextLine();
+                           customerQueue.enqueue(new Customer(name));
+                           break;
                  }
              }
 	}
