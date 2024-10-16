@@ -5,18 +5,21 @@
  */
 
 package topic_3_stack_calculator;
-
+import java.util.Stack;
+import javax.swing.JOptionPane;
 /**
  *
  * @author HP
  */
 public class StackCalcu extends javax.swing.JFrame {
 
+    private Stack<Double> stack;
     /**
      * Creates new form StackCalcu
      */
     public StackCalcu() {
         initComponents();
+        stack = new Stack<>(); 
     }
 
     /**
