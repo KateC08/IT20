@@ -352,7 +352,11 @@ public class StackCalcu extends javax.swing.JFrame {
         // TODO add your handling code here:
         performOperation("+");
     }//GEN-LAST:event_jButtonplusActionPerformed
-
+    
+    private void handleNumberButtonClick(int number) {
+        stack.push((double) number);
+        jTextField4.setText(String.valueOf(stack.peek())); 
+    }
     /**
      * @param args the command line arguments
      */
