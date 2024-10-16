@@ -171,6 +171,11 @@ public class StackCalcu extends javax.swing.JFrame {
         jButtonpeek.setText("peek");
 
         jButtonpush.setText("push");
+        jButtonpush.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonpushActionPerformed(evt);
+            }
+        });
 
         jButtonpop.setText("pop");
 
@@ -352,6 +357,34 @@ public class StackCalcu extends javax.swing.JFrame {
         // TODO add your handling code here:
         performOperation("+");
     }//GEN-LAST:event_jButtonplusActionPerformed
+
+    private void jButtonpushActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonpushActionPerformed
+        // TODO add your handling code here:
+        try {
+      
+        double value = Double.parseDouble(jTextField4.getText()); 
+       
+        if (!jTextField1.getText().isEmpty() && 
+            !jTextField2.getText().isEmpty() && 
+            !jTextField3.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Cannot push: Stack is full!");
+            jTextField4.setText(""); 
+            return;
+        }
+        
+        jTextField1.setText(jTextField2.getText());  
+        jTextField2.setText(jTextField3.getText());  
+        jTextField3.setText(String.valueOf(value));  // Display new value in jTextField3
+
+        stack.push(value);
+
+        // Clear the input field for new input
+        jTextField4.setText("");  
+
+    } catch (NumberFormatException e) {
+        JOptionPane.showMessageDialog(this, "Please enter a valid number.");
+    }
+    }//GEN-LAST:event_jButtonpushActionPerformed
     
     private void handleNumberButtonClick(int number) {
         stack.push((double) number);
