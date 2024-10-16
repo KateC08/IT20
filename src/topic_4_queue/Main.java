@@ -44,7 +44,14 @@ public class Main {
                      case 3:
                            System.out.println();
                            customerQueue.dequeue();
-                           break;                       
+                           break;
+                    case 4:
+                           //Exit the program
+                           System.out.println("Thank you! Comeback and run it again.");
+                           System.exit(0);
+                           break;   
+                    default:
+                        System.out.println("Invalid choice. Please select a valid option.");       
                  }
              }
 	}
