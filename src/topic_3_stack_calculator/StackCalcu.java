@@ -169,6 +169,11 @@ public class StackCalcu extends javax.swing.JFrame {
         jButtonclear.setText("C");
 
         jButtonpeek.setText("peek");
+        jButtonpeek.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonpeekActionPerformed(evt);
+            }
+        });
 
         jButtonpush.setText("push");
         jButtonpush.addActionListener(new java.awt.event.ActionListener() {
@@ -385,6 +390,18 @@ public class StackCalcu extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Please enter a valid number.");
     }
     }//GEN-LAST:event_jButtonpushActionPerformed
+
+    private void jButtonpeekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonpeekActionPerformed
+        // TODO add your handling code here:
+        if (jTextField3.getText().isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Stack is empty, nothing to peek.");
+        } else {
+            double topValue = Double.parseDouble(jTextField3.getText());
+            JOptionPane.showMessageDialog(this, "Top item of the stack: " + topValue);
+        }
+
+
+    }//GEN-LAST:event_jButtonpeekActionPerformed
     
     private void handleNumberButtonClick(int number) {
         stack.push((double) number);
