@@ -18,7 +18,10 @@ public class Main {
             
              Scanner sc = new Scanner(System.in);
              Queue customerQueue = new Queue();
-		 
+
+             while(true) {
+                 
+             }
 	}
 
 }
