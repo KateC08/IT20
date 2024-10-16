@@ -183,6 +183,11 @@ public class StackCalcu extends javax.swing.JFrame {
         });
 
         jButtonpop.setText("pop");
+        jButtonpop.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonpopActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -402,6 +407,22 @@ public class StackCalcu extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_jButtonpeekActionPerformed
+
+    private void jButtonpopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonpopActionPerformed
+        // TODO add your handling code here:
+        if (jTextField3.getText().isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Nothing to pop: Stack is empty.");
+        return;
+        }
+
+        double poppedValue = Double.parseDouble(jTextField3.getText()); 
+
+        JOptionPane.showMessageDialog(this, "Popped element: " + poppedValue);
+
+        jTextField3.setText(jTextField2.getText());
+        jTextField2.setText(jTextField1.getText()); 
+        jTextField1.setText("");
+    }//GEN-LAST:event_jButtonpopActionPerformed
     
     private void handleNumberButtonClick(int number) {
         stack.push((double) number);
