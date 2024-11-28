@@ -38,16 +38,9 @@ public class BubbleSort {
             
             Scanner sc = new Scanner(System.in);
             
-            int[] arr = {64, 34, 25, 12, 22, 11, 90};
-            System.out.println("Original array:");
-            System.out.println("Enter numbers: ");
-            int num = sc.nextInt();
-            printArray(arr);
-
-            bubbleSort(arr);
-
-            System.out.println("  array:");
-            printArray(arr);
+             int[] arr = null;
+             long timeTaken = 0;
+        
             
         }
 }
