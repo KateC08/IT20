@@ -5,6 +5,8 @@
  */
 package topic_6_sorting;
 
+import java.util.Scanner;
+
 
 public class SelectionSort {
     
@@ -28,4 +30,12 @@ public class SelectionSort {
         }
         System.out.println();
     }
+    
+     public static void main(String[] args) {
+            
+            Scanner sc = new Scanner(System.in);
+            
+             int[] arr = null;
+             long timeTaken = 0;
+     }
 }
