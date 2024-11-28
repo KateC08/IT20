@@ -1,6 +1,8 @@
 
 package topic_6_sorting;
 
+import java.util.Scanner;
+
 public class MergeSort {
       public static void mergeSort(int[] arr) {
         if (arr.length < 2) {
@@ -45,6 +47,12 @@ public class MergeSort {
         }
         System.out.println();
     }
-
-   
+    
+    public static void main(String[] args) {
+            
+            Scanner sc = new Scanner(System.in);
+            
+             int[] arr = null;
+             long timeTaken = 0;
+    } 
 }
