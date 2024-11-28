@@ -82,7 +82,12 @@ public class InsertionSort {
                             printArray(arr);
                             System.out.println("Sorting completed in: " + timeTaken + " milliseconds");
                         
-                            break;       
+                            break;      
+                     case 3:
+                            System.out.println();
+                            System.out.println("Thank you! Comeback and run it again.");
+                            System.exit(0);
+                            break;    
                 }
              }
      }
