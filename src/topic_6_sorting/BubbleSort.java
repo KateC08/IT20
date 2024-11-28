@@ -43,6 +43,11 @@ public class BubbleSort {
         
             while(true) {
                 
+                 System.out.println("Kindly choose a number: "
+                        + " 1. Add array Elements"
+                        + " 2. View sorted array and time taken."
+                        + " 3. Exit");
+                int choice = sc.nextInt();
             }
         }
 }
