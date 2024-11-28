@@ -58,6 +58,35 @@ public class SelectionSort {
                               arr[i] = sc.nextInt();
                             }
                             break;
+                    case 2: 
+                            System.out.println();
+                            if (arr == null) {
+                                System.out.println("Elements is not yet added. Please add elements first.");
+                                break;
+                            }
+                            
+                            System.out.println("Original array:");
+                            printArray(arr);
+
+                            long startTime = System.currentTimeMillis();
+                            selectionSort(arr); 
+                            
+                            long endTime = System.currentTimeMillis();
+                            timeTaken = startTime - endTime;
+                            
+                            System.out.println("Sorted array:");
+                            printArray(arr);
+                            System.out.println("Sorting completed in: " + timeTaken + " milliseconds");
+                        
+                            break;   
+                        
+                    case 3:
+                            System.out.println();
+                            System.out.println("Thank you! Comeback and run it again.");
+                            System.exit(0);
+                            break;    
+                      default:
+                            System.out.println("Invalid choice. Please select a valid option.");       
                  }
               }
               
