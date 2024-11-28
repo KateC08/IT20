@@ -7,10 +7,7 @@ package topic_6_sorting;
 
 import java.util.Scanner;
 
-/**
- *
- * @author ITLAB1-PC12-STUDENT
- */
+
 public class InsertionSort {
     
     public static void insertionSort(int[] arr) {

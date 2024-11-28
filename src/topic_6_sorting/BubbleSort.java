@@ -5,10 +5,8 @@
  */
 package topic_6_sorting;
 import java.util.Scanner;
-/**
- *
- * @author ITLAB1-PC12-STUDENT
- */
+
+
 public class BubbleSort {
     
          public static void bubbleSort(int[] arr) {
